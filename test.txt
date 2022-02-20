@@ -1,0 +1,360 @@
+Question #36Topic 1
+You have one project called proj-sa where you manage all your service accounts. 
+You want to be able to use a service account from this project to take snapshots of 
+VMs running in another project called proj-vm. What should you do?
+
+•	A. Download the private key from the service account, and add it to each VMs custom metadata. X
+•	B. Download the private key from the service account, and add the private key to each VMג€™s SSH keys.
+•	C. Grant the service account the IAM Role of Compute Storage Admin in the project called proj-vm. Y
+•	D. When creating the VMs, set the service accountג€™s API scope for Compute Engine to read/write.
+
+
+
+
+
+
+Question #37Topic 1
+You created a Google Cloud Platform project with an App Engine application inside the project. 
+You initially configured the application to be served from the us- central region. 
+Now you want the application to be served from the asia-northeast1 region. What should you do?
+
+•	A. Change the default region property setting in the existing GCP project to asia-northeast1.
+•	B. Change the region property setting in the existing App Engine application from us-central to asia-northeast1.
+•	C. Create a second App Engine application in the existing GCP project and specify asia-northeast1 as the region to serve your application.
+•	D. Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your 
+           application. X
+
+
+
+
+
+Question #41Topic 1
+You have 32 GB of data in a single file that you need to upload to a Nearline Storage bucket. 
+The WAN connection you are using is rated at 1 Gbps, and you are the only one on the connection. 
+You want to use as much of the rated 1 Gbps as possible to transfer the file rapidly. How should you upload the file?
+
+•	A. Use the GCP Console to transfer the file instead of gsutil.
+•	B. Enable parallel composite uploads using gsutil on the file transfer. X
+•	C. Decrease the TCP window size on the machine initiating the transfer.
+•	D. Change the storage class of the bucket from Nearline to Multi-Regional.
+
+
+
+
+
+Question #45Topic 1
+You recently deployed a new version of an application to App Engine and then discovered a bug in the release. 
+You need to immediately revert to the prior version of the application. What should you do?
+
+•	A. Run gcloud app restore.
+•	B. On the App Engine page of the GCP Console, select the application that needs to be reverted and click Revert.
+•	C. On the App Engine Versions page of the GCP Console, route 100% of the traffic to the previous version. X
+•	D. Deploy the original version as a separate application. Then go to App Engine settings and split traffic between applications so that 
+           the original version serves 100% of the requests.
+
+
+
+
+
+
+Question #48Topic 1
+You host a static website on Cloud Storage. Recently, you began to include links to PDF files on this site. Currently, when users click on the 
+links to these PDF files, their browsers prompt them to save the file onto their local system. Instead, you want the clicked PDF files to be 
+displayed within the browser window directly, without prompting the user to save the file locally. What should you do?
+
+A. Enable Cloud CDN on the website frontend.
+B. Enable ג€˜Share publiclyג€™ on the PDF file objects.
+C. Set Content-Type metadata to application/pdf on the PDF file objects. X
+D. Add a label to the storage bucket with a key of Content-Type and value of application/pdf.
+
+
+
+
+
+Question #59Topic 1
+You are the organization and billing administrator for your company. The engineering team has the Project Creator role on the organization. 
+You do not want the engineering team to be able to link projects to the billing account. Only the finance team should be able to link a project to a 
+billing account, but they should not be able to make any other changes to projects. What should you do?
+
+A. Assign the finance team only the Billing Account User role on the billing account.
+B. Assign the engineering team only the Billing Account User role on the billing account.
+C. Assign the finance team the Billing Account User role on the billing account and the Project Billing Manager role on the organization. X
+D. Assign the engineering team the Billing Account User role on the billing account and the Project Billing Manager role on the organization.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question #70Topic 1
+You are building an application that will run in your data center. The application will use Google Cloud 
+Platform (GCP) services like AutoML. You created a service account that has appropriate access to AutoML. 
+You need to enable authentication to the APIs from your on-premises environment. What should you do?
+
+A. Use service account credentials in your on-premises application.
+B. Use gcloud to create a key file for the service account that has appropriate permissions. X
+C. Set up direct interconnect between your data center and Google Cloud Platform to enable authentication for your on-premises applications.
+D. Go to the IAM & admin console, grant a user account permissions similar to the service account permissions, and use this user account for authentication from your data center.
+
+
+
+
+
+
+
+
+
+Question #79Topic 1
+You need to enable traffic between multiple groups of Compute Engine instances that are currently running two 
+different GCP projects. Each group of Compute
+Engine instances is running in its own VPC. What should you do?
+
+A. Verify that both projects are in a GCP Organization. Create a new VPC and add all instances.
+B. Verify that both projects are in a GCP Organization. Share the VPC from one project and request that the Compute Engine instances in the other project use this shared
+   VPC. X
+C. Verify that you are the Project Administrator of both projects. Create two new VPCs and add all instances.
+D. Verify that you are the Project Administrator of both projects. Create a new VPC and add all instances.
+
+
+
+
+Question #82Topic 1
+Your VMs are running in a subnet that has a subnet mask of 255.255.255.240. The current subnet has no more free 
+IP addresses and you require an additional
+10 IP addresses for new VMs. The existing and new VMs should all be able to reach each other without additional 
+routes. What should you do?
+
+A. Use gcloud to expand the IP range of the current subnet. X
+B. Delete the subnet, and recreate it using a wider range of IP addresses.
+C. Create a new project. Use Shared VPC to share the current network with the new project.
+D. Create a new subnet with the same starting IP but a wider range to overwrite the current subnet.
+
+
+
+
+
+
+
+
+Question #95Topic 1
+You want to find out when users were added to Cloud Spanner Identity Access Management (IAM) roles on your Google
+ Cloud Platform (GCP) project. What should you do in the GCP Console?
+
+A. Open the Cloud Spanner console to review configurations.
+B. Open the IAM & admin console to review IAM policies for Cloud Spanner roles. X
+C. Go to the Stackdriver Monitoring console and review information for Cloud Spanner.
+D. Go to the Stackdriver Logging console, review admin activity logs, and filter them for Cloud Spanner IAM roles. Y
+
+
+
+
+
+
+Question #96Topic 1
+Your company implemented BigQuery as an enterprise data warehouse. Users from multiple business units run queries 
+on this data warehouse. However, you notice that query costs for BigQuery are very high, and you need to control 
+costs. Which two methods should you use? (Choose two.)
+
+
+A. Split the users from business units to multiple projects.
+B. Apply a user- or project-level custom query quota for BigQuery data warehouse. X
+C. Create separate copies of your BigQuery data warehouse for each business unit.
+D. Split your BigQuery data warehouse into multiple data warehouses for each business unit.
+E. Change your BigQuery query model from on-demand to flat rate. Apply the appropriate number of slots to each Project. X
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question #: 109
+Topic #: 1
+[All Associate Cloud Engineer Questions]
+Your organization has user identities in Active Directory. Your organization wants to use Active Directory as their source of truth for identities. Your organization 
+wants to have full control over the Google accounts used by employees for all Google services, including your Google Cloud Platform (GCP) organization. What should you do?
+
+•	A. Use Google Cloud Directory Sync (GCDS) to synchronize users into Cloud Identity. X
+•	B. Use the cloud Identity APIs and write a script to synchronize users to Cloud Identity.
+•	C. Export users from Active Directory as a CSV and import them to Cloud Identity via the Admin Console.
+•	D. Ask each employee to create a Google account using self signup. Require that each employee use their company email address and password.
+
+
+
+
+
+
+Question #: 112
+Topic #: 1
+[All Associate Cloud Engineer Questions]
+You have a workload running on Compute Engine that is critical to your business. You want to ensure that the data on the boot disk of this workload is backed up regularly. 
+You need to be able to restore a backup as quickly as possible in case of disaster. You also want older backups to be cleaned automatically to save on cost. You want to follow 
+Google-recommended practices. What should you do?
+
+•	A. Create a Cloud Function to create an instance template.
+•	B. Create a snapshot schedule for the disk using the desired interval. Y
+•	C. Create a cron job to create a new disk from the disk using gcloud. X
+•	D. Create a Cloud Task to create an image and export it to Cloud Storage.
+
+
+
+
+
+Question #: 123
+Topic #: 1
+[All Associate Cloud Engineer Questions]
+You have a Compute Engine instance hosting a production application. You want to receive an email if the instance consumes more than 90% of its CPU resources for more 
+than 15 minutes. You want to use Google services. What should you do?
+
+•	A. 1. Create a consumer Gmail account. 2. Write a script that monitors the CPU usage. 3. When the CPU usage exceeds the threshold, have that script send an email 
+           using the Gmail account and smtp.gmail.com on port 25 as SMTP server.
+•	B. 1. Create a Stackdriver Workspace, and associate your Google Cloud Platform (GCP) project with it. 2. Create an Alerting Policy in Stackdriver that uses the 
+           threshold as a trigger condition. 3. Configure your email address in the notification channel. X
+•	C. 1. Create a Stackdriver Workspace, and associate your GCP project with it. 2. Write a script that monitors the CPU usage and sends it as a custom metric to 
+           Stackdriver. 3. Create an uptime check for the instance in Stackdriver.
+•	D. 1. In Stackdriver Logging, create a logs-based metric to extract the CPU usage by using this regular expression: CPU Usage: ([0-9] {1,3})% 2. In Stackdriver 
+           Monitoring, create an Alerting Policy based on this metric. 3. Configure your email address in the notification channel.
+
+
+
+
+
+
+Question #: 130
+Topic #: 1
+[All Associate Cloud Engineer Questions]
+You manage an App Engine Service that aggregates and visualizes data from BigQuery. The application is deployed with the default App Engine Service account.
+The data that needs to be visualized resides in a different project managed by another team. You do not have access to this project, but you want your application to be 
+able to read data from the BigQuery dataset. What should you do?
+
+•	A. Ask the other team to grant your default App Engine Service account the role of BigQuery Job User.
+•	B. Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer. X
+•	C. In Cloud IAM of your project, ensure that the default App Engine service account has the role of BigQuery Data Viewer.
+•	D. In Cloud IAM of your project, grant a newly created service account from the other team the role of BigQuery Job User in your project.
+
+
+
+
+
+Question #: 133
+Topic #: 1
+[All Associate Cloud Engineer Questions]
+An application generates daily reports in a Compute Engine virtual machine (VM). The VM is in the project corp-iot-insights. Your team operates only in the project 
+corp-aggregate-reports and needs a copy of the daily exports in the bucket corp-aggregate-reports-storage. You want to configure access so that the daily reports from the 
+VM are available in the bucket corp-aggregate-reports-storage and use as few steps as possible while following Google-recommended practices. What should you do?
+
+•	A. Move both projects under the same folder.
+•	B. Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage. Y
+•	C. Create a Shared VPC network between both projects. Grant the VM Service Account the role Storage Object Creator on corp-iot-insights. X
+•	D. Make corp-aggregate-reports-storage public and create a folder with a pseudo-randomized suffix name. Share the folder with the IoT team.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+141 A
+
+147 A
+
+151 A
+
+168 C
+
+171 A
+
